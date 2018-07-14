@@ -1,0 +1,26 @@
+{
+  "name": "aaa_electron",
+  "version": "1.0.0",
+  "description": "A minimal AAA front end to send ACCOUNTING messages",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/lucarv/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "jquery": "^3.3.1"
+  }
+}
