@@ -31,6 +31,7 @@ function sendRadiusMessage(msg_index, ip, id) {
         raw_packet: encoded,
         secret: message.secret
     };
+    window.alert('Send RADIUS to: ' + address+':'+aaa_port);
 
     client.send(encoded, 0, encoded.length, aaa_port, address, (err, bytes) => {
         if (err) window.alert(err);
