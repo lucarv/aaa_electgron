@@ -4,16 +4,12 @@ let radius = require('./lib/radius');
 let dgram = require('dgram');
 let client = dgram.createSocket("udp4");
 let address = (process.env.AAA_HOST || '0.0.0.0');
-let aaa_port = (process.env.AAA_PORT || 1812);
-let udp_port = (process.env.UDP_PORT || 49001);
+let aaa_port = (process.env.AAA_PORT || 1815);
+let udp_port = (process.env.UDP_PORT || 49002);
 client.bind({
     address: address,
     port: udp_port
 });
-
-let fs = require('fs');
-let filename = 'contacts';
-let sno = 0;
 
 $('#send-acct-msg').on('click', () => {
 
