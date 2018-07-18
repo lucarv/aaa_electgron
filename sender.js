@@ -15,7 +15,7 @@ let fs = require('fs');
 let filename = 'contacts';
 let sno = 0;
 
-$('#add-to-list').on('click', () => {
+$('#send-acct-msg').on('click', () => {
 
     let ip = $('#ip').val();
     let id = $('#id').val();
