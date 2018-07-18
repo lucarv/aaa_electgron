@@ -27,17 +27,17 @@ $('#add-to-list').on('click', () => {
 function sendRadiusMessage(msg_index, ip, id) {
     let message = messages[msg_index];
     message.attributes[1] = ['Framed-IP-Address', ip];
-    message.attributes[2] = ['User-Name', id];
+    message.attributes[2] = ['3GPP-IMEISV', id];
     let encoded = radius.encode(message);
+
     let sent_packets = {};
     sent_packets[message.identifier] = {
         raw_packet: encoded,
         secret: message.secret
     };
 
-    //const shark = Buffer.from("04fc006b28d7bbff3cbcf41644d9da6882709229010204060a82f90108060affe4ab1e1374657374342e636e642e626173652e62651f0d33323438383635353039342011414e303939302d545047572d312d312806000000012c1244393438453738413236453930303433","hex")
-    
     client.send(encoded, 0, encoded.length, aaa_port, address, (err, bytes) => {
-        if (err) throw err;
+        if (err) window.alert(err);
+        else window.alert('Accounting Message sent')
     });
 }

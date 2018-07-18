@@ -15,7 +15,6 @@ The code provided in this sample is not production ready and was built for demon
 export AAA_HOST=0.0.0.0
 export AAA_PORT=1812
 export UDP_PORT=49001
-bower install bootstrap (you can ignore that)
 npm install
 npm start
 
