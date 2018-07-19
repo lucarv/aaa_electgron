@@ -4,7 +4,7 @@ let messages = require('./lib/messages');
 let radius = require('./lib/radius');
 let address = process.env.AAA_HOST || '192.168.1.11';
 let client = dgram.createSocket('udp4');
-client.bind(49001);
+client.bind(1815);
 
 $('#send-acct-msg').on('click', () => {
 	let ip = $('#ip').val();
