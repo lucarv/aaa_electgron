@@ -17,9 +17,9 @@ $('#send-acct-msg').on('click', () => {
 function sendRadiusMessage(msg_index, ip, id) {
 	let message = messages[msg_index];
 	message.attributes[1] = ['Framed-IP-Address', ip];
-	message.attributes[2] = ['3GPP-IMEISV', id];
+	message.attributes[2] = ['3GPP-IMSI', id];
 	let encoded = radius.encode(message);
-	console.log(encoded.toString());
+	window.alert(`send RADIUS to ${address}`);
 
 	client.send(encoded, 1815, address, err => {
 		if (err) window.alert(err);

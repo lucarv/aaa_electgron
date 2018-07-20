@@ -21,7 +21,7 @@ ATTRIBUTE	Framed-Compression			13	integer
 ATTRIBUTE	Login-IP-Host				14	ipaddr
 ATTRIBUTE	Login-Service				15	integer
 ATTRIBUTE	Login-TCP-Port				16	integer
-ATTRIBUTE	3GPP-IMEISV        			17	string
+ATTRIBUTE	3GPP-IMSI        			17	string
 ATTRIBUTE	Reply-Message				18	string
 ATTRIBUTE	Callback-Number				19	string
 ATTRIBUTE	Callback-Id				20	string
