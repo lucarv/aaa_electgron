@@ -9,12 +9,11 @@ The code provided in this sample is not production ready and was built for demon
 ```
 
 
-# Running the sample
+# Running the sample (on max/linux)
 
 ```
-export AAA_HOST=0.0.0.0
-export AAA_PORT=1812
-export UDP_PORT=49001
+export AAAAA_HOST=X.X.X.X
+export AAA_PORT=XXXX
 npm install
 npm start
 
