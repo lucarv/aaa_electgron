@@ -2,7 +2,7 @@ let $ = require('jquery');
 let dgram = require('dgram');
 let messages = require('./lib/messages');
 let radius = require('./lib/radius');
-let address = process.env.AAA_HOST || '192.168.1.11';
+let address = process.env.AAA_HOST || '0.0.0.0';
 let client = dgram.createSocket('udp4');
 client.bind(1815);
 
